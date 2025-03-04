@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@layer base {
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+.without-ring {
+    @apply focus:ring-0 focus:ring-offset-0;
+  }
+  
+
+  
