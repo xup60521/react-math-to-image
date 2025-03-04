@@ -17,6 +17,7 @@ const config = {
 export default function App() {
     const [input, setInput] = useState("");
     const [size, setSize] = useState(1);
+
     return (
         <div className="w-screen h-screen flex flex-col items-center gap-12 pt-[30vh]">
             <h1 className="text-6xl font-mono">Math To Image</h1>
@@ -48,6 +49,7 @@ export default function App() {
             <div className="w-full flex justify-center h-16">
                 <MathJaxContext config={config}>
                     <MathJax
+                        dynamic
                         style={{ fontSize: `${size}rem` }}
                     >{`$$ ${input} $$`}</MathJax>
                 </MathJaxContext>
