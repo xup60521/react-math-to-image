@@ -49,7 +49,7 @@ export default function App() {
                 <MathJaxContext config={config}>
                     <MathJax
                         style={{ fontSize: `${size}rem` }}
-                    >{`\\( ${input} \\)`}</MathJax>
+                    >{`$$ ${input} $$`}</MathJax>
                 </MathJaxContext>
             </div>
         </div>
